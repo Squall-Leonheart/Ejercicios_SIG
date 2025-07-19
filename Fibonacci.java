@@ -4,11 +4,7 @@ public class Fibonacci{
 		if(n>2){
 			return fibo(n-2)+fibo(n-1);
 		}else{
-			if(n>2){
-				return 2;
-			}else{
 			return 1;
-			}
 		}
 	}
 	public static void main(String args[]){
