@@ -59,7 +59,7 @@ public class Persona {
         this.estrato = 1;
     }
 
-    // Método 5 (while)
+    // Método 5
     public void aumentarIngreso(double cantidad) {
         int i = 0;
         while (i < 1) {
@@ -68,20 +68,24 @@ public class Persona {
         }
     }
 
-    // Método 6 (if)
+    // Método 6
     public String grupoSocial() {
         if (estrato <= 2) return "Bajo";
         else if (estrato <= 4) return "Medio";
         else return "Alto";
     }
 
-    // Método 7 (for)
+    // Método 7
     public void imprimirSubsidio() {
         for (int i = 0; i < 1; i++) {
             System.out.println("Tiene subsidio: " + (subsidioActivo ? "Sí" : "No"));
         }
     }
 
-    public int getEstrato() { return estrato; }
-    public boolean tieneSubsidio() { return subsidioActivo; }
+    public int getEstrato() {
+        return estrato;
+    }
+    public boolean tieneSubsidio() {
+        return subsidioActivo;
+    }
 }

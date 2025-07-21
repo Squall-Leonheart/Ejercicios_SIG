@@ -42,7 +42,7 @@ public class Servicio {
         System.out.println("Tarifa final: $" + tarifaFinal);
     }
 
-    // Método 3 (while)
+    // Método 3
     public void aumentarConsumo(int extra) {
         int i = 0;
         while (i < extra) {
@@ -60,12 +60,12 @@ public class Servicio {
         this.tarifaBase = 1000;
     }
 
-    // Método 5 (if)
+    // Método 5
     public boolean unidadValida() {
         return unidad.equals("m³") || unidad.equals("kWh") || unidad.equals("litros");
     }
 
-    // Método 6 (for)
+    // Método 6
     public void reiniciarConsumo() {
         for (int i = consumo; i >= 0; i--) {
             consumo = 0;
